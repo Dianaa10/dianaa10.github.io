@@ -1,0 +1,75 @@
+
+.bgContainer {
+  position: fixed; /* Fixes the container to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Prevents scrolling due to excess content */
+  z-index: -1; /* Ensures it stays behind other content */
+}
+
+video {
+  width: 100%; /* Stretch video to cover width */
+  height: 100%; /* Stretch video to cover height */
+  object-fit: cover; /* Ensures the video covers the container */
+  position: absolute; /* Makes stacking possible */
+  top: 0;
+  left: 0;
+}
+
+/* Add these styles in your CSS file or inline in the component */
+#carouselExample {
+  position: relative;
+  height: 100vh; /* Ensures the carousel takes up the full height of the viewport */
+  top: 60px; /* Adjust based on the height of your fixed navbar */
+  overflow: hidden; /* Prevents images from spilling out */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%; /* Ensures each carousel item takes up the full height of the carousel */
+}
+
+.carousel-image {
+  object-fit: cover; /* Ensures images cover the full height and width without distortion */
+  height: 100%; /* Ensures images take up full height of the carousel */
+  width: 100vh;  /* Ensures images take up full width of the carousel */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
